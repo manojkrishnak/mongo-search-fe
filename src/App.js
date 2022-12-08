@@ -14,8 +14,7 @@ function App() {
     const res = await fetch(`https://mongo-search-api.onrender.com/search-selected-city?city=${usersCity}`, {
       headers: {
         'Content-Type': 'application/json'
-      },
-      mode: 'no-cors',
+      }
     });
     const { data } = await res.json();
     console.log("<<", data)
@@ -26,8 +25,7 @@ function App() {
     const res = await fetch(`https://mongo-search-api.onrender.com/operating-at`, {
       headers: {
         'Content-Type': 'application/json'
-      },
-      mode: 'no-cors',
+      }
     });
     const { data } = await res.json();
     console.log("<<", data)
