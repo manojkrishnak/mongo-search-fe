@@ -11,7 +11,8 @@ function SearchBar(props) {
         const res = await fetch(`https://mongo-search-api.onrender.com/search?q=${query}`, {
             headers: {
                 "accepts": "application/json"
-            }
+            },
+            mode: 'no-cors',
         });
         const { data } = await res.json();
         console.log("<<", data)

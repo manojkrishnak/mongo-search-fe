@@ -15,6 +15,7 @@ function App() {
       headers: {
         'Content-Type': 'application/json'
       },
+      mode: 'no-cors',
     });
     const { data } = await res.json();
     console.log("<<", data)
@@ -26,6 +27,7 @@ function App() {
       headers: {
         'Content-Type': 'application/json'
       },
+      mode: 'no-cors',
     });
     const { data } = await res.json();
     console.log("<<", data)
