@@ -11,7 +11,7 @@ function App() {
   const [placesOperatingAt, setPlacesOperatingAt] = useState([]);
 
   const fetchStaysInThatCity = async () => {
-    const res = await fetch(`/search-selected-city?city=${usersCity}`, {
+    const res = await fetch(`https://mongo-search-api.onrender.com/search-selected-city?city=${usersCity}`, {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -22,7 +22,7 @@ function App() {
   }
 
   const fetchOperatingAt = async () => {
-    const res = await fetch(`/operating-at`, {
+    const res = await fetch(`https://mongo-search-api.onrender.com/operating-at`, {
       headers: {
         'Content-Type': 'application/json'
       },
