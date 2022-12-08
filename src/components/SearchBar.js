@@ -8,7 +8,7 @@ function SearchBar(props) {
     const [cityResults, setCityResults] = useState([]);
 
     async function fetchData(query, cb) {
-        const res = await fetch(`https://mongo-search-api.onrender.com/search?q=${query}`, {
+        const res = await fetch(`https://mongo-search-be.adaptable.app/search?q=${query}`, {
             headers: {
                 "accepts": "application/json"
             }
